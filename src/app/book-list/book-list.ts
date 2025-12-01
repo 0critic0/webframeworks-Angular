@@ -1,5 +1,5 @@
 import {Component, OnInit } from '@angular/core';
-import { BookData } from '../book-data'; 
+import { BookData } from './../book-data'; 
 
 export interface Book {
   _id: string;
@@ -17,7 +17,6 @@ export interface Book {
   standalone: false,
   templateUrl: './book-list.html',
   styleUrl: './book-list.css',
-  providers: [BookData]
 })
 
 export class BookList implements OnInit { 
